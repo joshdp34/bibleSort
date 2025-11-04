@@ -205,3 +205,58 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# ============================
+# Python / Flask project .gitignore
+# ============================
+
+# --- Virtual environments ---
+venv/
+.env/
+.venv/
+env/
+ENV/
+*/venv/
+*/.venv/
+
+# --- Python cache and compiled files ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Local databases ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Environment and config files ---
+# (you may keep .env.example checked in)
+.env
+*.env
+.env.*
+
+# --- Logs and debug output ---
+*.log
+logs/
+instance/
+
+# --- IDE and editor files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Flask / build artifacts ---
+dist/
+build/
+*.egg-info/
+*.egg
+
+# --- AWS / deployment ---
+.elasticbeanstalk/
+.pytest_cache/
+.cache/
+
