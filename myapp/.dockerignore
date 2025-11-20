@@ -1,22 +1,24 @@
-# Byte-compiled / optimized / DLL files
+# VCS and project metadata
+.git
+.gitignore
+
+# Python bytecode and cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Distribution / packaging
+# Virtual environments and build outputs
 .Python
 env/
-.venv/
 ENV/
+.venv/
+venv/
 build/
 dist/
 *.egg-info/
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
+# Logs, coverage, and test artifacts
+*.log
 .tox/
 .nox/
 .coverage*
@@ -27,15 +29,14 @@ htmlcov/
 .env
 .env.*
 
+# Local databases and app instance data
+app.db
+*.sqlite3
+*.db
+instance/
+
 # Editor and OS files
 *.swp
 *.swo
-*.DS_Store
+.DS_Store
 Thumbs.db
-
-# VCS
-.git/
-.gitignore
-
-# SQLite database (used for local dev fallback)
-app.db
