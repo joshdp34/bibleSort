@@ -1,0 +1,18 @@
+# Web framework and templating
+Flask>=3.0.0
+Werkzeug>=3.0.0
+Jinja2>=3.1.0
+
+# Database ORM and Postgres driver
+Flask-SQLAlchemy>=3.1.1
+SQLAlchemy>=2.0.20
+psycopg2-binary>=2.9.9   # required for PostgreSQL (RDS/production)
+
+# HTTP requests for IP geolocation
+requests>=2.31.0
+
+# Environment variable management (optional, useful for local dev)
+python-dotenv>=1.0.0
+
+# For production deployment (optional but recommended)
+gunicorn>=21.2.0
