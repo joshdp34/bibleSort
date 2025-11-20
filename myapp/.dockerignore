@@ -1,9 +1,5 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.swp
 *.py[cod]
 *$py.class
 
@@ -29,9 +25,6 @@ htmlcov/
 
 # Environment files
 .env
-.venv
-venv
-.git
 .env.*
 
 # Editor and OS files
@@ -46,5 +39,3 @@ Thumbs.db
 
 # SQLite database (used for local dev fallback)
 app.db
-instance/
-staticfiles/
