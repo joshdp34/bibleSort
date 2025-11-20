@@ -12,7 +12,7 @@
   <meta property="og:description" content="Place the books of the Bible in order from first to last.">
   <meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
   <div class="game-container">
@@ -114,6 +114,6 @@
   </div>
 
   <!-- Your game script (will fetch Top 25 at start & after each new game; will open the modal; will show rank/percentile after saving) -->
-  <script src="scripts.js"></script>
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

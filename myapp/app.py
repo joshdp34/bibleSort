@@ -31,14 +31,17 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 
 
-# Optional: create tables on first request (handy for local/dev).
+# Optional: create tables at startup (handy for local/dev).
 # In production, prefer Flask-Migrate/Alembic.
-@app.before_first_request
 def _create_tables_if_needed():
     try:
         db.create_all()
     except Exception as e:
         app.logger.warning(f"create_all skipped/failed: {e}")
+
+
+with app.app_context():
+    _create_tables_if_needed()
 
 
 # -----------
