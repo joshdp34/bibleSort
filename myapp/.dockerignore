@@ -1,13 +1,50 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.swp
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+.venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.coverage*
+coverage.xml
+htmlcov/
+
+# Environment files
 .env
 .venv
 venv
 .git
+.env.*
+
+# Editor and OS files
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# VCS
+.git/
 .gitignore
+
+# SQLite database (used for local dev fallback)
 app.db
 instance/
 staticfiles/
